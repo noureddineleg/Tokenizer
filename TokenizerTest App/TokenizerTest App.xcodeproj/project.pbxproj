@@ -23,7 +23,7 @@
 		26C312A02B4AFDC3006C6EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26C312A22B4AFDC4006C6EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26C312A52B4AFDC4006C6EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		26C312A72B4AFDC4006C6EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26C312A72B4AFDC4006C6EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "TokenizerTest App/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,79 @@
 		26C312982B4AFDC3006C6EC5 /* TokenizerTest App */ = {
 			isa = PBXGroup;
 			children = (
-				26C312992B4AFDC3006C6EC5 /* AppDelegate.swift */,
-				26C3129B2B4AFDC3006C6EC5 /* SceneDelegate.swift */,
-				26C3129D2B4AFDC3006C6EC5 /* ViewController.swift */,
-				26C3129F2B4AFDC3006C6EC5 /* Main.storyboard */,
-				26C312A22B4AFDC4006C6EC5 /* Assets.xcassets */,
-				26C312A42B4AFDC4006C6EC5 /* LaunchScreen.storyboard */,
-				26C312A72B4AFDC4006C6EC5 /* Info.plist */,
+				26C312AD2B4AFF1E006C6EC5 /* Application Delegates */,
+				26C312AE2B4AFF43006C6EC5 /* Modules */,
+				26C312B22B4AFFA3006C6EC5 /* Protocols */,
+				26C312B32B4AFFBC006C6EC5 /* Ressources */,
+				26C312AF2B4AFF51006C6EC5 /* Supporting Files */,
 			);
 			path = "TokenizerTest App";
+			sourceTree = "<group>";
+		};
+		26C312AD2B4AFF1E006C6EC5 /* Application Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				26C312992B4AFDC3006C6EC5 /* AppDelegate.swift */,
+				26C3129B2B4AFDC3006C6EC5 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegates";
+			sourceTree = "<group>";
+		};
+		26C312AE2B4AFF43006C6EC5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				26C312B12B4AFF85006C6EC5 /* Main */,
+				26C312B02B4AFF7B006C6EC5 /* LunchScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		26C312AF2B4AFF51006C6EC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26C312A72B4AFDC4006C6EC5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26C312B02B4AFF7B006C6EC5 /* LunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				26C312A42B4AFDC4006C6EC5 /* LaunchScreen.storyboard */,
+			);
+			path = LunchScreen;
+			sourceTree = "<group>";
+		};
+		26C312B12B4AFF85006C6EC5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				26C3129F2B4AFDC3006C6EC5 /* Main.storyboard */,
+				26C312B42B4B0037006C6EC5 /* Tokenizer  */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		26C312B22B4AFFA3006C6EC5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		26C312B32B4AFFBC006C6EC5 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				26C312A22B4AFDC4006C6EC5 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		26C312B42B4B0037006C6EC5 /* Tokenizer  */ = {
+			isa = PBXGroup;
+			children = (
+				26C3129D2B4AFDC3006C6EC5 /* ViewController.swift */,
+			);
+			path = "Tokenizer ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,12 +358,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZAW223X9V8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TokenizerTest App/Info.plist";
+				INFOPLIST_FILE = "TokenizerTest App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,12 +387,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZAW223X9V8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TokenizerTest App/Info.plist";
+				INFOPLIST_FILE = "TokenizerTest App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
