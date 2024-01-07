@@ -12,10 +12,17 @@ import Combine
 
 class ReactiveTextField: UITextField {
     
-    /// Reactive Text Field
-    var textPublisher: AnyPublisher<String?, Never> {
-        NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification, object: self)
-            .map { ($0.object as? UITextField)?.text }
-            .eraseToAnyPublisher()
-    }
+
+//    var textPublisher: AnyPublisher<String, Never> {
+//        ControlPublisher(control: self, controlEvents: .editingChanged)
+//            .map { [weak self] in self?.text ?? "" }
+//            .eraseToAnyPublisher()
+//    }
+    
+//    /// Reactive Text Field
+//    var textPublisher: AnyPublisher<String?, Never> {
+//        NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification, object: self)
+//            .map { [weak self] _ in self?.text }
+//            .eraseToAnyPublisher()
+//    }
 }

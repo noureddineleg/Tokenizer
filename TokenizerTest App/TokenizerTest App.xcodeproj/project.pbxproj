@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260002F22B4B39E50043A6DB /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260002F12B4B39E50043A6DB /* UITextField+Extension.swift */; };
 		26C3129A2B4AFDC3006C6EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312992B4AFDC3006C6EC5 /* AppDelegate.swift */; };
 		26C3129C2B4AFDC3006C6EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3129B2B4AFDC3006C6EC5 /* SceneDelegate.swift */; };
 		26C3129E2B4AFDC3006C6EC5 /* TokenizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3129D2B4AFDC3006C6EC5 /* TokenizerViewController.swift */; };
 		26C312A12B4AFDC3006C6EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C3129F2B4AFDC3006C6EC5 /* Main.storyboard */; };
 		26C312A32B4AFDC4006C6EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C312A22B4AFDC4006C6EC5 /* Assets.xcassets */; };
 		26C312A62B4AFDC4006C6EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C312A42B4AFDC4006C6EC5 /* LaunchScreen.storyboard */; };
-		26C312B92B4B02FB006C6EC5 /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312B82B4B02FB006C6EC5 /* UINib+Extension.swift */; };
+		26C312B92B4B02FB006C6EC5 /* UIControl +Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312B82B4B02FB006C6EC5 /* UIControl +Extension.swift */; };
 		26C312BB2B4B038F006C6EC5 /* TokenizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312BA2B4B038F006C6EC5 /* TokenizerViewModel.swift */; };
 		26C312BE2B4B03E7006C6EC5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312BD2B4B03E7006C6EC5 /* BaseViewController.swift */; };
 		26C312C02B4B03FF006C6EC5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312BF2B4B03FF006C6EC5 /* BaseViewModel.swift */; };
-		26C312C32B4B09E5006C6EC5 /* ReactiveTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312C22B4B09E5006C6EC5 /* ReactiveTextField.swift */; };
+		26C312C52B4B0BF8006C6EC5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312C42B4B0BF8006C6EC5 /* String+Extension.swift */; };
+		26C312C72B4B0E7F006C6EC5 /* ControlPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312C62B4B0E7F006C6EC5 /* ControlPublisher.swift */; };
+		26C312C92B4B0F58006C6EC5 /* ControlSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312C82B4B0F58006C6EC5 /* ControlSubscription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260002F12B4B39E50043A6DB /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		26C312962B4AFDC3006C6EC5 /* TokenizerTest App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TokenizerTest App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C312992B4AFDC3006C6EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26C3129B2B4AFDC3006C6EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,11 +33,13 @@
 		26C312A22B4AFDC4006C6EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26C312A52B4AFDC4006C6EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26C312A72B4AFDC4006C6EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "TokenizerTest App/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
-		26C312B82B4B02FB006C6EC5 /* UINib+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
+		26C312B82B4B02FB006C6EC5 /* UIControl +Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl +Extension.swift"; sourceTree = "<group>"; };
 		26C312BA2B4B038F006C6EC5 /* TokenizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewModel.swift; sourceTree = "<group>"; };
 		26C312BD2B4B03E7006C6EC5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		26C312BF2B4B03FF006C6EC5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		26C312C22B4B09E5006C6EC5 /* ReactiveTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveTextField.swift; sourceTree = "<group>"; };
+		26C312C42B4B0BF8006C6EC5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		26C312C62B4B0E7F006C6EC5 /* ControlPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPublisher.swift; sourceTree = "<group>"; };
+		26C312C82B4B0F58006C6EC5 /* ControlSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSubscription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +152,8 @@
 		26C312B62B4B02BA006C6EC5 /* Commun */ = {
 			isa = PBXGroup;
 			children = (
-				26C312C12B4B09CE006C6EC5 /* Custom Elements */,
+				26C312C62B4B0E7F006C6EC5 /* ControlPublisher.swift */,
+				26C312C82B4B0F58006C6EC5 /* ControlSubscription.swift */,
 				26C312BC2B4B03D2006C6EC5 /* Base Elements */,
 				26C312B72B4B02CA006C6EC5 /* Extensions */,
 			);
@@ -156,7 +163,9 @@
 		26C312B72B4B02CA006C6EC5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				26C312B82B4B02FB006C6EC5 /* UINib+Extension.swift */,
+				26C312C42B4B0BF8006C6EC5 /* String+Extension.swift */,
+				26C312B82B4B02FB006C6EC5 /* UIControl +Extension.swift */,
+				260002F12B4B39E50043A6DB /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,14 +177,6 @@
 				26C312BF2B4B03FF006C6EC5 /* BaseViewModel.swift */,
 			);
 			path = "Base Elements";
-			sourceTree = "<group>";
-		};
-		26C312C12B4B09CE006C6EC5 /* Custom Elements */ = {
-			isa = PBXGroup;
-			children = (
-				26C312C22B4B09E5006C6EC5 /* ReactiveTextField.swift */,
-			);
-			path = "Custom Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,13 +251,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				26C3129E2B4AFDC3006C6EC5 /* TokenizerViewController.swift in Sources */,
+				26C312C52B4B0BF8006C6EC5 /* String+Extension.swift in Sources */,
 				26C3129A2B4AFDC3006C6EC5 /* AppDelegate.swift in Sources */,
 				26C312BB2B4B038F006C6EC5 /* TokenizerViewModel.swift in Sources */,
+				26C312C72B4B0E7F006C6EC5 /* ControlPublisher.swift in Sources */,
 				26C312C02B4B03FF006C6EC5 /* BaseViewModel.swift in Sources */,
+				260002F22B4B39E50043A6DB /* UITextField+Extension.swift in Sources */,
 				26C3129C2B4AFDC3006C6EC5 /* SceneDelegate.swift in Sources */,
-				26C312B92B4B02FB006C6EC5 /* UINib+Extension.swift in Sources */,
-				26C312C32B4B09E5006C6EC5 /* ReactiveTextField.swift in Sources */,
+				26C312B92B4B02FB006C6EC5 /* UIControl +Extension.swift in Sources */,
 				26C312BE2B4B03E7006C6EC5 /* BaseViewController.swift in Sources */,
+				26C312C92B4B0F58006C6EC5 /* ControlSubscription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
