@@ -75,7 +75,6 @@
 				26C312AD2B4AFF1E006C6EC5 /* Application Delegates */,
 				26C312B62B4B02BA006C6EC5 /* Commun */,
 				26C312AE2B4AFF43006C6EC5 /* Modules */,
-				26C312B22B4AFFA3006C6EC5 /* Protocols */,
 				26C312B32B4AFFBC006C6EC5 /* Ressources */,
 				26C312AF2B4AFF51006C6EC5 /* Supporting Files */,
 			);
@@ -123,13 +122,6 @@
 				26C312B42B4B0037006C6EC5 /* Tokenizer  */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		26C312B22B4AFFA3006C6EC5 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		26C312B32B4AFFBC006C6EC5 /* Ressources */ = {
