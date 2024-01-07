@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		26C3129A2B4AFDC3006C6EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312992B4AFDC3006C6EC5 /* AppDelegate.swift */; };
 		26C3129C2B4AFDC3006C6EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3129B2B4AFDC3006C6EC5 /* SceneDelegate.swift */; };
-		26C3129E2B4AFDC3006C6EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3129D2B4AFDC3006C6EC5 /* ViewController.swift */; };
+		26C3129E2B4AFDC3006C6EC5 /* TokenizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3129D2B4AFDC3006C6EC5 /* TokenizerViewController.swift */; };
 		26C312A12B4AFDC3006C6EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C3129F2B4AFDC3006C6EC5 /* Main.storyboard */; };
 		26C312A32B4AFDC4006C6EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C312A22B4AFDC4006C6EC5 /* Assets.xcassets */; };
 		26C312A62B4AFDC4006C6EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C312A42B4AFDC4006C6EC5 /* LaunchScreen.storyboard */; };
+		26C312B92B4B02FB006C6EC5 /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312B82B4B02FB006C6EC5 /* UINib+Extension.swift */; };
+		26C312BB2B4B038F006C6EC5 /* TokenizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312BA2B4B038F006C6EC5 /* TokenizerViewModel.swift */; };
+		26C312BE2B4B03E7006C6EC5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312BD2B4B03E7006C6EC5 /* BaseViewController.swift */; };
+		26C312C02B4B03FF006C6EC5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C312BF2B4B03FF006C6EC5 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26C312962B4AFDC3006C6EC5 /* TokenizerTest App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TokenizerTest App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C312992B4AFDC3006C6EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26C3129B2B4AFDC3006C6EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26C3129D2B4AFDC3006C6EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26C3129D2B4AFDC3006C6EC5 /* TokenizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewController.swift; sourceTree = "<group>"; };
 		26C312A02B4AFDC3006C6EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26C312A22B4AFDC4006C6EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26C312A52B4AFDC4006C6EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26C312A72B4AFDC4006C6EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "TokenizerTest App/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		26C312B82B4B02FB006C6EC5 /* UINib+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
+		26C312BA2B4B038F006C6EC5 /* TokenizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewModel.swift; sourceTree = "<group>"; };
+		26C312BD2B4B03E7006C6EC5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		26C312BF2B4B03FF006C6EC5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				26C312AD2B4AFF1E006C6EC5 /* Application Delegates */,
+				26C312B62B4B02BA006C6EC5 /* Commun */,
 				26C312AE2B4AFF43006C6EC5 /* Modules */,
 				26C312B22B4AFFA3006C6EC5 /* Protocols */,
 				26C312B32B4AFFBC006C6EC5 /* Ressources */,
@@ -126,9 +135,36 @@
 		26C312B42B4B0037006C6EC5 /* Tokenizer  */ = {
 			isa = PBXGroup;
 			children = (
-				26C3129D2B4AFDC3006C6EC5 /* ViewController.swift */,
+				26C3129D2B4AFDC3006C6EC5 /* TokenizerViewController.swift */,
+				26C312BA2B4B038F006C6EC5 /* TokenizerViewModel.swift */,
 			);
 			path = "Tokenizer ";
+			sourceTree = "<group>";
+		};
+		26C312B62B4B02BA006C6EC5 /* Commun */ = {
+			isa = PBXGroup;
+			children = (
+				26C312BC2B4B03D2006C6EC5 /* Base Elements */,
+				26C312B72B4B02CA006C6EC5 /* Extensions */,
+			);
+			path = Commun;
+			sourceTree = "<group>";
+		};
+		26C312B72B4B02CA006C6EC5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				26C312B82B4B02FB006C6EC5 /* UINib+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26C312BC2B4B03D2006C6EC5 /* Base Elements */ = {
+			isa = PBXGroup;
+			children = (
+				26C312BD2B4B03E7006C6EC5 /* BaseViewController.swift */,
+				26C312BF2B4B03FF006C6EC5 /* BaseViewModel.swift */,
+			);
+			path = "Base Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26C3129E2B4AFDC3006C6EC5 /* ViewController.swift in Sources */,
+				26C3129E2B4AFDC3006C6EC5 /* TokenizerViewController.swift in Sources */,
 				26C3129A2B4AFDC3006C6EC5 /* AppDelegate.swift in Sources */,
+				26C312BB2B4B038F006C6EC5 /* TokenizerViewModel.swift in Sources */,
+				26C312C02B4B03FF006C6EC5 /* BaseViewModel.swift in Sources */,
 				26C3129C2B4AFDC3006C6EC5 /* SceneDelegate.swift in Sources */,
+				26C312B92B4B02FB006C6EC5 /* UINib+Extension.swift in Sources */,
+				26C312BE2B4B03E7006C6EC5 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
